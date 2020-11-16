@@ -1,0 +1,15 @@
+
+<div class="example-container">
+    <form  [formGroup]="profileForm" (ngSubmit)="onsubmit()">
+            <label>
+                    Username:
+                    <input type="text" formControlName="username" required>
+                  </label>
+                <label>
+                    Password:
+                    <input type="text" formControlName="password" required>
+                  </label>
+                <button type="submit" [disabled]="!profileForm.valid">Login</button>
+    </form>
+
+  </div>
